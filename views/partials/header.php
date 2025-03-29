@@ -4,17 +4,17 @@ $title = "Dragon Quest";
 
 ?>
 
-<header class="bg-gray-800 text-white py-4">
+<header class="bg-gray-950 px-[10%] py-4">
     <div class="flex items-center justify-between max-w-5xl mx-auto">
-        <a href="/index.php">
-            <h2 class="text-xl font-semibold"><?= $title ?></h2>
+        <a href="/">
+            <h2 class="text-xl font-light text-indigo-600"><?= $title ?></h2>
         </a>
         <div>
             <nav>
                 <ul class="flex space-x-3">
-                    <li><a href="/classes.php" class="hover:bg-gray-700 px-3 py-2 rounded-lg transition">Classes</a></li>
-                    <li><a href="/monsters.php" class="hover:bg-gray-700 px-3 py-2 rounded-lg transition">Monsters</a></li>
-                    <li><a href="/items.php" class="hover:bg-gray-700 px-3 py-2 rounded-lg transition">Items</a></li>
+                    <li><a href="/classes.php" class="text-white hover:bg-gray-900 px-3 py-2 transition">Classes</a></li>
+                    <li><a href="/monsters.php" class="text-white hover:bg-gray-900 px-3 py-2 transition">Monsters</a></li>
+                    <li><a href="/items.php" class="text-white hover:bg-gray-900 px-3 py-2 transition">Items</a></li>
                 </ul>
             </nav>
         </div>
