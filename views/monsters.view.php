@@ -1,8 +1,2 @@
-<?php
-
-?>
-
-<div>
-    <h1>Characters</h1>
-    <p>Characters in Dragon Quest</p>
-</div>
+<?php require_once("partials/head.php") ?>
+<?php require_once('partials/header.php') ?>
