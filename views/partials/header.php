@@ -12,9 +12,9 @@ $title = "Dragon Quest";
         <div>
             <nav>
                 <ul class="flex space-x-3">
-                    <li><a href="/classes.php" class="text-white hover:bg-gray-900 px-3 py-2 transition">Classes</a></li>
-                    <li><a href="/monsters.php" class="text-white hover:bg-gray-900 px-3 py-2 transition">Monsters</a></li>
-                    <li><a href="/items.php" class="text-white hover:bg-gray-900 px-3 py-2 transition">Items</a></li>
+                    <li><a href="/classes.php" class="<?php echo $_SERVER["REQUEST_URI"] == '/classes.php' ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Classes</a></li>
+                    <li><a href="/monsters.php" class="<?php echo $_SERVER["REQUEST_URI"] == '/monsters.php' ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Monsters</a></li>
+                    <li><a href="/items.php" class="<?php echo $_SERVER["REQUEST_URI"] == '/items.php' ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Items</a></li>
                 </ul>
             </nav>
         </div>
