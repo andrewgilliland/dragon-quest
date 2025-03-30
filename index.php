@@ -1,5 +1,5 @@
 <?php
-
+require_once("lib/functions.php");
 
 $heading = "Welcome to Dragon Quest";
 $subheading = "Your adventure begins here!";
