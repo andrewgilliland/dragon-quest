@@ -1,4 +1,4 @@
-<section class="bg-gray-950 text-white py-20 border-t border-b border-white/10">
+<section class="bg-gray-950 text-white py-20 border-t border-b border-white/10 h-screen">
     <div class="max-w-5xl mx-auto text-center">
         <h1 class="text-4xl font-bold mb-4"><?= $heading ?></h1>
         <p class="text-lg mb-8"><?= $subheading ?></p>
