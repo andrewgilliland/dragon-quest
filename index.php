@@ -1,8 +1,9 @@
 <?php
-
+require_once("model/Router.php");
 require_once("lib/functions.php");
 
-$uri = $_SERVER['REQUEST_URI'];
+
+$router = new Router();
 
 $routes = [
     '/' => 'controllers/index.php',
@@ -11,9 +12,13 @@ $routes = [
     '/items' => 'controllers/items.php',
 ];
 
-if (array_key_exists($uri, $routes)) {
-    require_once($routes[$uri]);
-} else {
+$router->addRoutes($routes);
+
+$router->setNotFoundCallback(function() {
+    require_once("controllers/404.php");
     http_response_code(404);
-    echo "404 - Page not found";
-}
+});
+
+$uri = $_SERVER['REQUEST_URI'];
+
+$router->handleRequest($uri);
