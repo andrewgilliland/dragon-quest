@@ -12,9 +12,9 @@ $title = "Dragon Quest";
         <div>
             <nav>
                 <ul class="flex space-x-3">
-                    <li><a href="/classes.php" class="<?php echo urlIs('/classes.php') ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Classes</a></li>
-                    <li><a href="/monsters.php" class="<?php echo urlIs('/monsters.php') ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Monsters</a></li>
-                    <li><a href="/items.php" class="<?php echo urlIs('/items.php') ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Items</a></li>
+                    <li><a href="/classes" class="<?php echo urlIs('/classes') ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Classes</a></li>
+                    <li><a href="/monsters" class="<?php echo urlIs('/monsters') ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Monsters</a></li>
+                    <li><a href="/items" class="<?php echo urlIs('/items') ? "bg-gray-900" : ""; ?> text-white px-3 py-2">Items</a></li>
                 </ul>
             </nav>
         </div>

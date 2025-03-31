@@ -1,23 +1,19 @@
 <?php
+
 require_once("lib/functions.php");
 
-$heading = "Welcome to Dragon Quest";
-$subheading = "Your adventure begins here!";
+$uri = $_SERVER['REQUEST_URI'];
 
-require_once("views/index.view.php");
+$routes = [
+    '/' => 'controllers/index.php',
+    '/classes' => 'controllers/classes.php',
+    '/monsters' => 'controllers/monsters.php',
+    '/items' => 'controllers/items.php',
+];
 
-// Router logic
-// $page = $_GET['page'] ?? 'home'; // Default to 'home' if no page is specified
-
-// dd($_SERVER);
-
-// $pageFile = __DIR__ . "/views/$page.view.php";
-
-// if (file_exists($pageFile)) {
-//     include $pageFile;
-// } else {
-//     http_response_code(404);
-//     echo "404 - Page not found";
-// }
-
-?>
+if (array_key_exists($uri, $routes)) {
+    require_once($routes[$uri]);
+} else {
+    http_response_code(404);
+    echo "404 - Page not found";
+}
