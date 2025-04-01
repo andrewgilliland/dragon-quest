@@ -1,0 +1,15 @@
+{
+  "name": "andrewgilliland/dragon-quest",
+  "authors": [
+    {
+      "name": "Andrew Gilliland",
+      "email": "andrewpgilliland@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "AndrewGilliland\\DragonQuest\\": "src/"
+    }
+  }
+}

@@ -1,4 +1,8 @@
 <?php
+
+const BASE_DIR = __DIR__;
+require BASE_DIR . '/vendor/autoload.php';
+
 require_once("model/Router.php");
 require_once("lib/functions.php");
 
