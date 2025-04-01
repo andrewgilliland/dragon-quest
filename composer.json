@@ -6,10 +6,25 @@
       "email": "andrewpgilliland@gmail.com"
     }
   ],
-  "require": {},
+  "scripts": {
+    "test": [
+      "pest --testdox"
+    ],
+    "lint": [
+      "phpcs --standard=PSR12 src tests"
+    ]
+  },
   "autoload": {
     "psr-4": {
       "AndrewGilliland\\DragonQuest\\": "src/"
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.8"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
     }
   }
 }
