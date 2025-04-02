@@ -12,6 +12,9 @@
     ],
     "lint": [
       "phpcs --standard=PSR12 src tests"
+    ],
+    "phpstan": [
+      "phpstan analyse . --memory-limit=2048M"
     ]
   },
   "autoload": {
@@ -20,7 +23,8 @@
     }
   },
   "require-dev": {
-    "pestphp/pest": "^3.8"
+    "pestphp/pest": "^3.8",
+    "phpstan/phpstan": "^2.1"
   },
   "config": {
     "allow-plugins": {
