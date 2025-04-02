@@ -2,4 +2,4 @@
 <?php require_once('partials/header.php') ?>
 <?php require_once('partials/hero.php') ?>
 
-<?php hero("Welcome to Dragon Quest", "Your adventure begins here!") ?>
+<?php hero("Classes", "Discover the classes you can choose from in your adventure!") ?>

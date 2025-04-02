@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Hero Section
  *
