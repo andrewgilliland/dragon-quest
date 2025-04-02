@@ -7,7 +7,7 @@
  */
 function hero(string $heading, string $subheading): void {
     ?>
-    <section class="bg-gray-950 text-white py-20 border-t border-b border-white/10 h-screen">
+    <section class="bg-gray-950 text-white py-20 border-t border-b border-white/10 h-1/2">
         <div class="flex flex-col justify-start items-start max-w-5xl mx-auto">
             <h1 class="border border-white/10 text-6xl font-light tracking-tight mb-4"><?= htmlspecialchars($heading) ?></h1>
             <p class="border border-white/10 text-base/7 text-gray-300 mb-8"><?= htmlspecialchars($subheading) ?></p>
