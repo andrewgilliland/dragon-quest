@@ -1,12 +1,12 @@
 <?php
 
-function dataDump(int|string|array|null $value): void {
+function dataDump(mixed $value): void {
     echo "<pre>";
     var_dump($value);
     echo "</pre>";
     die();
 }
 
-function urlIs($url): string {
+function urlIs(string $url): bool {
     return $_SERVER["REQUEST_URI"] == $url;
 }
