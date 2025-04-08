@@ -14,6 +14,7 @@ $routes = [
     '/classes' => 'controllers/classes.php',
     '/monsters' => 'controllers/monsters.php',
     '/items' => 'controllers/items.php',
+    '/play' => 'controllers/play.php',
 ];
 
 $router->addRoutes($routes);

@@ -11,7 +11,6 @@ $items = [
 ];
 ?>
 
-
 <?php hero("Items", "Discover the items you can use in your adventure!") ?>
 
 <section class="bg-gray-950 py-20 border-b border-white/10">
