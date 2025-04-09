@@ -4,5 +4,5 @@
 
 <body>
     <div id="root"></div>
-    <script type="module" src="../dist/assets/index-CZSHuxYB.js"></script> 
+    <script type="module" src="../dist/assets/index-Bu6WpSAF.js"></script> 
 </body>
